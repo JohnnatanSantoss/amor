@@ -111,7 +111,7 @@
       em todo o multiverso.
     </p>
 
-    <a href="#foto" class="heart">💖</a>
+    <div class="heart" onclick="irParaFoto()">💖</div>
   </section>
 
   <!-- Tela 2 -->
@@ -126,6 +126,13 @@
     function mostrarMensagem() {
       document.getElementById('music').play();
       alert("Você é meu lugar seguro, meu amor e minha escolha todos os dias. ❤️");
+    }
+  </script>
+  <script>
+    function irParaFoto() {
+        document.getElementById("foto").scrollIntoView({
+            behavior: "smooth"
+        });
     }
   </script>
 
